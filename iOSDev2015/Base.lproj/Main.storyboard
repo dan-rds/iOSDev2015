@@ -16,18 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1425136738262-212551713a58.png" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-bs-Q2z">
+                                <rect key="frame" x="-4" y="-22" width="423" height="758"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytc-kp-nuY">
-                                <rect key="frame" x="167" y="654" width="50" height="30"/>
+                                <rect key="frame" x="138" y="611" width="146" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Credits">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FhG-FW-6r9" kind="modal" id="vsz-8t-l1H"/>
+                                    <segue destination="FhG-FW-6r9" kind="show" id="hs8-dg-I6r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-pB-qmJ">
-                                <rect key="frame" x="158" y="532" width="49" height="30"/>
+                                <rect key="frame" x="155" y="513" width="129" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -35,8 +41,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJc-Mv-28N">
-                                <rect key="frame" x="176" y="426" width="31" height="30"/>
+                                <rect key="frame" x="158" y="428" width="126" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -49,6 +57,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand2.png" translatesAutoresizingMaskIntoConstraints="NO" id="t6L-5N-EUo">
+                                <rect key="frame" x="123" y="121" width="182" height="241"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waves2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-hZ-tP3">
+                                <rect key="frame" x="93" y="128" width="191" height="116"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -121,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCp-zZ-jfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="581"/>
+            <point key="canvasLocation" x="1026" y="662"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hqA-6g-iks">
@@ -154,6 +168,11 @@
             <point key="canvasLocation" x="391" y="1225"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand2.png" width="500" height="707"/>
+        <image name="photo-1425136738262-212551713a58.png" width="698" height="1200"/>
+        <image name="waves2.png" width="500" height="404"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="meK-9P-KHT"/>
     </inferredMetricsTieBreakers>
