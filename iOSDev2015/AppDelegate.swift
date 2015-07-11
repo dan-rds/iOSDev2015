@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SenseSdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

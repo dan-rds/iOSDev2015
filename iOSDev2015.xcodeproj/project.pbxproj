@@ -13,6 +13,13 @@
 		656DE8071B517FCE0096C07E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8061B517FCE0096C07E /* Images.xcassets */; };
 		656DE80A1B517FCE0096C07E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8081B517FCE0096C07E /* LaunchScreen.xib */; };
 		656DE8161B517FCF0096C07E /* iOSDev2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */; };
+		660DB3091B51820B00FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
+		660DB30B1B51825100FE4344 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30A1B51825100FE4344 /* CoreMotion.framework */; };
+		660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30C1B51826600FE4344 /* CoreLocation.framework */; };
+		660DB30F1B51826F00FE4344 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */; };
+		660DB3111B51827600FE4344 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3101B51827600FE4344 /* libz.dylib */; };
+		660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
+		660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +32,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		660DB3141B5182C200FE4344 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		656DE7FA1B517FCE0096C07E /* iOSDev2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE7FE1B517FCE0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +57,11 @@
 		656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDev2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE8141B517FCF0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDev2015Tests.swift; sourceTree = "<group>"; };
+		660DB3081B51820B00FE4344 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
+		660DB30A1B51825100FE4344 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		660DB30C1B51826600FE4344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		660DB3101B51827600FE4344 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660DB3111B51827600FE4344 /* libz.dylib in Frameworks */,
+				660DB30F1B51826F00FE4344 /* SystemConfiguration.framework in Frameworks */,
+				660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */,
+				660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */,
+				660DB30B1B51825100FE4344 /* CoreMotion.framework in Frameworks */,
+				660DB3091B51820B00FE4344 /* SenseSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +91,10 @@
 		656DE7F11B517FCE0096C07E = {
 			isa = PBXGroup;
 			children = (
+				660DB3101B51827600FE4344 /* libz.dylib */,
+				660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */,
+				660DB30C1B51826600FE4344 /* CoreLocation.framework */,
+				660DB30A1B51825100FE4344 /* CoreMotion.framework */,
 				656DE7FC1B517FCE0096C07E /* iOSDev2015 */,
 				656DE8121B517FCF0096C07E /* iOSDev2015Tests */,
 				656DE7FB1B517FCE0096C07E /* Products */,
@@ -77,6 +113,7 @@
 		656DE7FC1B517FCE0096C07E /* iOSDev2015 */ = {
 			isa = PBXGroup;
 			children = (
+				660DB3081B51820B00FE4344 /* SenseSdk.framework */,
 				656DE7FF1B517FCE0096C07E /* AppDelegate.swift */,
 				656DE8011B517FCE0096C07E /* ViewController.swift */,
 				656DE8031B517FCE0096C07E /* Main.storyboard */,
@@ -122,6 +159,8 @@
 				656DE7F61B517FCE0096C07E /* Sources */,
 				656DE7F71B517FCE0096C07E /* Frameworks */,
 				656DE7F81B517FCE0096C07E /* Resources */,
+				660DB3141B5182C200FE4344 /* Embed Frameworks */,
+				660DB3151B51832C00FE4344 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -161,6 +200,11 @@
 				TargetAttributes = {
 					656DE7F91B517FCE0096C07E = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					656DE80E1B517FCF0096C07E = {
 						CreatedOnToolsVersion = 6.4;
@@ -206,6 +250,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		660DB3151B51832C00FE4344 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# http://ikennd.ac/blog/2015/02/stripping-unwanted-architectures-from-dynamic-libraries-in-xcode/\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n# This script strips unused architectures\nfind \"$APP_PATH\" -name 'SenseSdk.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		656DE7F61B517FCE0096C07E /* Sources */ = {
@@ -340,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSDev2015",
+				);
 				INFOPLIST_FILE = iOSDev2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSDev2015",
+				);
 				INFOPLIST_FILE = iOSDev2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +477,7 @@
 				656DE81B1B517FCF0096C07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		656DE81C1B517FCF0096C07E /* Build configuration list for PBXNativeTarget "iOSDev2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +486,7 @@
 				656DE81E1B517FCF0096C07E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
