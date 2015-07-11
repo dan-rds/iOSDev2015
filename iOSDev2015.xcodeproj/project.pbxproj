@@ -13,6 +13,8 @@
 		656DE8071B517FCE0096C07E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8061B517FCE0096C07E /* Images.xcassets */; };
 		656DE80A1B517FCE0096C07E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8081B517FCE0096C07E /* LaunchScreen.xib */; };
 		656DE8161B517FCF0096C07E /* iOSDev2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */; };
+		656DE8221B519F240096C07E /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8211B519F240096C07E /* hand.png */; };
+		656DE8251B51A4D00096C07E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656DE8241B51A4D00096C07E /* MapKit.framework */; };
 		660DB3091B51820B00FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB30B1B51825100FE4344 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30A1B51825100FE4344 /* CoreMotion.framework */; };
 		660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30C1B51826600FE4344 /* CoreLocation.framework */; };
@@ -57,6 +59,8 @@
 		656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDev2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE8141B517FCF0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDev2015Tests.swift; sourceTree = "<group>"; };
+		656DE8211B519F240096C07E /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = ../../Assets/hand.png; sourceTree = "<group>"; };
+		656DE8241B51A4D00096C07E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		660DB3081B51820B00FE4344 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		660DB30A1B51825100FE4344 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		660DB30C1B51826600FE4344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656DE8251B51A4D00096C07E /* MapKit.framework in Frameworks */,
 				660DB3111B51827600FE4344 /* libz.dylib in Frameworks */,
 				660DB30F1B51826F00FE4344 /* SystemConfiguration.framework in Frameworks */,
 				660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */,
@@ -91,6 +96,7 @@
 		656DE7F11B517FCE0096C07E = {
 			isa = PBXGroup;
 			children = (
+				656DE8241B51A4D00096C07E /* MapKit.framework */,
 				660DB3101B51827600FE4344 /* libz.dylib */,
 				660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */,
 				660DB30C1B51826600FE4344 /* CoreLocation.framework */,
@@ -98,6 +104,7 @@
 				656DE7FC1B517FCE0096C07E /* iOSDev2015 */,
 				656DE8121B517FCF0096C07E /* iOSDev2015Tests */,
 				656DE7FB1B517FCE0096C07E /* Products */,
+				656DE8231B519F5E0096C07E /* Assets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +154,14 @@
 				656DE8141B517FCF0096C07E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		656DE8231B519F5E0096C07E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				656DE8211B519F240096C07E /* hand.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656DE8051B517FCE0096C07E /* Main.storyboard in Resources */,
+				656DE8221B519F240096C07E /* hand.png in Resources */,
 				656DE80A1B517FCE0096C07E /* LaunchScreen.xib in Resources */,
 				656DE8071B517FCE0096C07E /* Images.xcassets in Resources */,
 			);
@@ -405,8 +421,10 @@
 					"$(PROJECT_DIR)/iOSDev2015",
 				);
 				INFOPLIST_FILE = iOSDev2015/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,8 +437,10 @@
 					"$(PROJECT_DIR)/iOSDev2015",
 				);
 				INFOPLIST_FILE = iOSDev2015/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
