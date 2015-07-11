@@ -21,11 +21,16 @@ class GenericRestaurantCallback: RecipeFiredDelegate {
         let location = place.location
         let long = location.longitude
         let lat = location.latitude
+        var isFastFood: Bool = false
+        
+        if (name == "McDonalds") {
+            isFastFood = true
+        }
         
         let title: String? = "Warning!!!"
-        let body: String? = "Back off fatty... (Stay away from \(name))"
-        let date: NSDate = NSDate(timeIntervalSinceNow: 5)
-        let dict: [NSString: AnyObject]? = ["lat": lat, "long": long, "name": name]
+        let body: String? = isFastFood ? "Back off fatty... (Stay away from \(name))" : "Good job eating healthy... (Eating at \(name))"
+        let date: NSDate = NSDate(timeIntervalSinceNow: 10)
+        let dict: [NSString: AnyObject]? = ["lat": lat, "long": long, "name": name, "fastfood": isFastFood]
         
         let notification = UILocalNotification()
         notification.alertTitle = title

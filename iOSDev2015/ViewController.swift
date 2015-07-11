@@ -26,6 +26,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         SenseSdkTestUtility.fireTrigger(fromRecipe: "restaurantRecipe", confidenceLevel: ConfidenceLevel.High, places: [place], errorPtr: error)
         
     }
+    
+    func handleNotification(notification: UILocalNotification) {
+        
+        NSLog("Handling Notification")
+        
+        if let opts = notification.userInfo {
+            NSLog("%@", opts)
+        }
+        
+    }
 
 }
 
