@@ -21,7 +21,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         NSLog("TestButton pressed")
         
-        let place = PoiPlace(latitude: 34, longitude: 34, radius: 50, name: "McDonalds", id: "id1", type: .Restaurant)
+        let place = PoiPlace(latitude: 34, longitude: 34, radius: 50, name: "McDonalds", id: "McDonalds", type: .Restaurant)
         let error = SenseSdkErrorPointer.create()
         SenseSdkTestUtility.fireTrigger(fromRecipe: "restaurantRecipe", confidenceLevel: ConfidenceLevel.High, places: [place], errorPtr: error)
         
