@@ -27,7 +27,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
     }
     
-    
-
+    func handleNotification(notification: UILocalNotification) {
+        
+        NSLog("Handling Notification")
+        
+        if let opts = notification.userInfo {
+            NSLog("%@", opts)
+        }
+     
+    }
+    override func viewDidAppear(animated: Bool) {
+        TRUE
+    }
 }
 
