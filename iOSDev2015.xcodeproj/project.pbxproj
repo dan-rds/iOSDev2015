@@ -20,6 +20,7 @@
 		660DB3111B51827600FE4344 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3101B51827600FE4344 /* libz.dylib */; };
 		660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		660DB30C1B51826600FE4344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		660DB3101B51827600FE4344 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRestaurantCallback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				660DB3081B51820B00FE4344 /* SenseSdk.framework */,
 				656DE7FF1B517FCE0096C07E /* AppDelegate.swift */,
+				66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */,
 				656DE8011B517FCE0096C07E /* ViewController.swift */,
 				656DE8031B517FCE0096C07E /* Main.storyboard */,
 				656DE8061B517FCE0096C07E /* Images.xcassets */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656DE8021B517FCE0096C07E /* ViewController.swift in Sources */,
+				66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */,
 				656DE8001B517FCE0096C07E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
