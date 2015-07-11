@@ -15,6 +15,7 @@
 		656DE8161B517FCF0096C07E /* iOSDev2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */; };
 		656DE8221B519F240096C07E /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8211B519F240096C07E /* hand.png */; };
 		656DE8251B51A4D00096C07E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656DE8241B51A4D00096C07E /* MapKit.framework */; };
+		656DE8271B51ABA90096C07E /* waves.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8261B51ABA90096C07E /* waves.png */; };
 		660DB3091B51820B00FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB30B1B51825100FE4344 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30A1B51825100FE4344 /* CoreMotion.framework */; };
 		660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30C1B51826600FE4344 /* CoreLocation.framework */; };
@@ -61,6 +62,7 @@
 		656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDev2015Tests.swift; sourceTree = "<group>"; };
 		656DE8211B519F240096C07E /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = ../../Assets/hand.png; sourceTree = "<group>"; };
 		656DE8241B51A4D00096C07E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		656DE8261B51ABA90096C07E /* waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waves.png; path = ../../Assets/waves.png; sourceTree = "<group>"; };
 		660DB3081B51820B00FE4344 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		660DB30A1B51825100FE4344 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		660DB30C1B51826600FE4344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 		656DE8231B519F5E0096C07E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				656DE8261B51ABA90096C07E /* waves.png */,
 				656DE8211B519F240096C07E /* hand.png */,
 			);
 			name = Assets;
@@ -253,6 +256,7 @@
 			files = (
 				656DE8051B517FCE0096C07E /* Main.storyboard in Resources */,
 				656DE8221B519F240096C07E /* hand.png in Resources */,
+				656DE8271B51ABA90096C07E /* waves.png in Resources */,
 				656DE80A1B517FCE0096C07E /* LaunchScreen.xib in Resources */,
 				656DE8071B517FCE0096C07E /* Images.xcassets in Resources */,
 			);
