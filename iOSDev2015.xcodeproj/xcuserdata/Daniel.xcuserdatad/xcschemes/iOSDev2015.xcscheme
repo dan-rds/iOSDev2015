@@ -17,8 +17,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "656DE7F91B517FCE0096C07E"
-            BuildableName = "iOSDev2015.app"
-            BlueprintName = "iOSDev2015"
+            BuildableName = "Tisk Tisk.app"
+            BlueprintName = "Tisk Tisk"
             ReferencedContainer = "container:iOSDev2015.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -37,8 +37,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "656DE7F91B517FCE0096C07E"
-            BuildableName = "iOSDev2015.app"
-            BlueprintName = "iOSDev2015"
+            BuildableName = "Tisk Tisk.app"
+            BlueprintName = "Tisk Tisk"
             ReferencedContainer = "container:iOSDev2015.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -55,8 +55,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "656DE7F91B517FCE0096C07E"
-            BuildableName = "iOSDev2015.app"
-            BlueprintName = "iOSDev2015"
+            BuildableName = "Tisk Tisk.app"
+            BlueprintName = "Tisk Tisk"
             ReferencedContainer = "container:iOSDev2015.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

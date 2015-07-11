@@ -20,6 +20,7 @@
 		656DE82B1B51B8000096C07E /* waves2.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE8291B51B8000096C07E /* waves2.png */; };
 		656DE82D1B51B86B0096C07E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE82C1B51B86B0096C07E /* background.png */; };
 		656DE82F1B51BB870096C07E /* photo-1425136738262-212551713a58.png in Resources */ = {isa = PBXBuildFile; fileRef = 656DE82E1B51BB870096C07E /* photo-1425136738262-212551713a58.png */; };
+		656DE8391B51CAB50096C07E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656DE8381B51CAB50096C07E /* MapViewController.swift */; };
 		660DB3091B51820B00FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB30B1B51825100FE4344 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30A1B51825100FE4344 /* CoreMotion.framework */; };
 		660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB30C1B51826600FE4344 /* CoreLocation.framework */; };
@@ -55,14 +56,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		656DE7FA1B517FCE0096C07E /* iOSDev2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDev2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656DE7FA1B517FCE0096C07E /* iOSDev2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iOSDev2015.app; path = "Tisk Tisk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE7FE1B517FCE0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE7FF1B517FCE0096C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656DE8011B517FCE0096C07E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		656DE8041B517FCE0096C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		656DE8061B517FCE0096C07E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		656DE8091B517FCE0096C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSDev2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = iOSDev2015Tests.xctest; path = Tisk_TiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE8141B517FCF0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDev2015Tests.swift; sourceTree = "<group>"; };
 		656DE8211B519F240096C07E /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		656DE8291B51B8000096C07E /* waves2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waves2.png; sourceTree = "<group>"; };
 		656DE82C1B51B86B0096C07E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		656DE82E1B51BB870096C07E /* photo-1425136738262-212551713a58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-1425136738262-212551713a58.png"; sourceTree = "<group>"; };
+		656DE8381B51CAB50096C07E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		660DB3081B51820B00FE4344 /* SenseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenseSdk.framework; sourceTree = "<group>"; };
 		660DB30A1B51825100FE4344 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		660DB30C1B51826600FE4344 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -136,6 +138,7 @@
 				656DE7FF1B517FCE0096C07E /* AppDelegate.swift */,
 				66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */,
 				656DE8011B517FCE0096C07E /* ViewController.swift */,
+				656DE8381B51CAB50096C07E /* MapViewController.swift */,
 				656DE8031B517FCE0096C07E /* Main.storyboard */,
 				656DE8061B517FCE0096C07E /* Images.xcassets */,
 				656DE8081B517FCE0096C07E /* LaunchScreen.xib */,
@@ -314,6 +317,7 @@
 				656DE8021B517FCE0096C07E /* ViewController.swift in Sources */,
 				66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */,
 				656DE8001B517FCE0096C07E /* AppDelegate.swift in Sources */,
+				656DE8391B51CAB50096C07E /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
