@@ -185,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		656DE7F91B517FCE0096C07E /* iOSDev2015 */ = {
+		656DE7F91B517FCE0096C07E /* Tisk Tisk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 656DE8191B517FCF0096C07E /* Build configuration list for PBXNativeTarget "iOSDev2015" */;
+			buildConfigurationList = 656DE8191B517FCF0096C07E /* Build configuration list for PBXNativeTarget "Tisk Tisk" */;
 			buildPhases = (
 				656DE7F61B517FCE0096C07E /* Sources */,
 				656DE7F71B517FCE0096C07E /* Frameworks */,
@@ -199,14 +199,14 @@
 			);
 			dependencies = (
 			);
-			name = iOSDev2015;
+			name = "Tisk Tisk";
 			productName = iOSDev2015;
 			productReference = 656DE7FA1B517FCE0096C07E /* iOSDev2015.app */;
 			productType = "com.apple.product-type.application";
 		};
-		656DE80E1B517FCF0096C07E /* iOSDev2015Tests */ = {
+		656DE80E1B517FCF0096C07E /* Tisk_TiskTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 656DE81C1B517FCF0096C07E /* Build configuration list for PBXNativeTarget "iOSDev2015Tests" */;
+			buildConfigurationList = 656DE81C1B517FCF0096C07E /* Build configuration list for PBXNativeTarget "Tisk_TiskTests" */;
 			buildPhases = (
 				656DE80B1B517FCF0096C07E /* Sources */,
 				656DE80C1B517FCF0096C07E /* Frameworks */,
@@ -217,7 +217,7 @@
 			dependencies = (
 				656DE8111B517FCF0096C07E /* PBXTargetDependency */,
 			);
-			name = iOSDev2015Tests;
+			name = Tisk_TiskTests;
 			productName = iOSDev2015Tests;
 			productReference = 656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -258,8 +258,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				656DE7F91B517FCE0096C07E /* iOSDev2015 */,
-				656DE80E1B517FCF0096C07E /* iOSDev2015Tests */,
+				656DE7F91B517FCE0096C07E /* Tisk Tisk */,
+				656DE80E1B517FCF0096C07E /* Tisk_TiskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,7 +330,7 @@
 /* Begin PBXTargetDependency section */
 		656DE8111B517FCF0096C07E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 656DE7F91B517FCE0096C07E /* iOSDev2015 */;
+			target = 656DE7F91B517FCE0096C07E /* Tisk Tisk */;
 			targetProxy = 656DE8101B517FCF0096C07E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -514,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		656DE8191B517FCF0096C07E /* Build configuration list for PBXNativeTarget "iOSDev2015" */ = {
+		656DE8191B517FCF0096C07E /* Build configuration list for PBXNativeTarget "Tisk Tisk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				656DE81A1B517FCF0096C07E /* Debug */,
@@ -523,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		656DE81C1B517FCF0096C07E /* Build configuration list for PBXNativeTarget "iOSDev2015Tests" */ = {
+		656DE81C1B517FCF0096C07E /* Build configuration list for PBXNativeTarget "Tisk_TiskTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				656DE81D1B517FCF0096C07E /* Debug */,
