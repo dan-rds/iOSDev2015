@@ -19,8 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //enables local notifications
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
+        
+        //set up sensesdk and initial recipe registration
+        SenseSdk.enableSdkWithKey("SDK KEY HERE")
+        
+        let restaurantTrigger = FireTrigger.whenEntersPoi(.Restaurant, conditions: nil, errorPtr: nil)!
+        
+        let recipe = Recipe(name: "restaurantRecipe", trigger: restaurantTrigger, timeWindow: TimeWindow.allDay, cooldown: Cooldown.create(oncePer: 10, frequency: CooldownTimeUnit.Minutes, errorPtr: nil)!)
+        
+        let callback = GenericRestaurantCallback()
+        
+        SenseSdk.register(recipe: recipe, delegate: callback)
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
