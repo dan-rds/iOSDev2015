@@ -35,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         SenseSdk.register(recipe: recipe, delegate: callback)
         
         return true
-        
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import SenseSdk
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
