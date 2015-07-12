@@ -17,9 +17,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
     }
     
-    @IBOutlet weak var map: UIImageView!
 
+    
+ 
     @IBOutlet weak var history: UIImageView!
+    @IBOutlet weak var map: UIImageView!
     @IBOutlet weak var credits: UIImageView!
     @IBAction func testButtonPressed(sender: AnyObject) {
         
@@ -45,6 +47,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     override func viewDidLayoutSubviews() {
         
         history.image = UIImage(named: "history.png")
+
         
         history.center = CGPointMake(200, -75)
 
@@ -62,19 +65,19 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func viewDidAppear(animated: Bool) {
         
-        UIView.animateWithDuration(1, delay: 0.0, options: .Repeat, animations: {
+        UIView.animateWithDuration(0.5, delay: 2.0, options: .Repeat, animations: {
             self.hand.transform = CGAffineTransformMakeRotation((4.0 * CGFloat(M_PI)) / 180.0)
             
             }, completion: nil)
         
         
       
-        UIView.animateWithDuration(1.4,animations: {
-            self.history.center = CGPointMake(200, 465)
+        UIView.animateWithDuration(1.2,animations: {
+            self.history.center = CGPointMake(200, 570)
         })
         
-       UIView.animateWithDuration(1.2,animations: {
-            self.map.center = CGPointMake(200, 570)
+       UIView.animateWithDuration(1.4,animations: {
+            self.map.center = CGPointMake(200, 465)
             })
         
         UIView.animateWithDuration(1, animations: {
