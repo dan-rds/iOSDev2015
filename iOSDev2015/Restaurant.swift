@@ -11,15 +11,18 @@ import CoreLocation
 
 class Restaurant: NSObject {
     
-    var isHealthy: Bool
-    var latitude: CLLocationDegrees
-    var longitude: CLLocationDegrees
+    var name: String = ""
+    var latitude: CLLocationDegrees = 0.0
+    var longitude: CLLocationDegrees = 0.0
+    var isHealthy: Bool = false
     
-    init(lat: CLLocationDegrees, long: CLLocationDegrees, _isHealthy: Bool) {
+    init(name: String, lat: CLLocationDegrees, long: CLLocationDegrees, isHealthy: Bool) {
         
+        super.init()
+        self.name = name
         latitude = lat
         longitude = long
-        isHealthy = _isHealthy
+        self.isHealthy = isHealthy
         
     }
     
