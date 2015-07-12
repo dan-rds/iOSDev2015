@@ -21,11 +21,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
     @IBOutlet weak var history: UIImageView!
     @IBOutlet weak var credits: UIImageView!
+    
     @IBAction func testButtonPressed(sender: AnyObject) {
         
         NSLog("TestButton pressed")
         
-        let place = PoiPlace(latitude: 34, longitude: 34, radius: 50, name: "McDonalds", id: "McDonalds", type: .Restaurant)
+        let place = PoiPlace(latitude: 34, longitude: 34, radius: 50, name: "McDonalds", id: "lyfe kitchen", type: .Restaurant)
         let error = SenseSdkErrorPointer.create()
         SenseSdkTestUtility.fireTrigger(fromRecipe: "restaurantRecipe", confidenceLevel: ConfidenceLevel.High, places: [place], errorPtr: error)
         
@@ -33,7 +34,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var hand: UIImageView!
     
     func handleNotification(notification: UILocalNotification) {
-        
+
         NSLog("Handling Notification")
         
         if let opts = notification.userInfo {
