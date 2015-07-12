@@ -22,7 +22,7 @@ class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
         let long = location.longitude
         let lat = location.latitude
         
-        let restaurant = FactualHandler.getRestaurantData(name, latitude: lat, longitude: long)
+        let restaurant = FactualHandler.getRestaurantData(name, latitude: lat, longitude: long)!
         
         let title: String? = "Warning!!!"
         let body: String? = restaurant.isHealthy ? "Good job eating healthy... (Eating at \(name))" : "Back off fatty... (Stay away from \(name))"
