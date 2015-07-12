@@ -16,8 +16,10 @@ import CoreLocation
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
-
-
+    var lat: Float = 0.0
+    var long: Float = 0.0
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         FactualHandler.nearbyRestaurantsAtLatitude(37.375174, longitude: -121.918564, count: 10)
@@ -39,16 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         return true
     }
     
+   
+    }
+
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
         println("Notification recieved")
-        
-        let controller = window!.rootViewController as! ViewController
-        controller.handleNotification(notification)
-        
+                
     }
 
 
-}
+
 

@@ -9,6 +9,17 @@
 import Foundation
 import SenseSdk
 
+enum RestaurantType: Int {
+    case Desert = 343
+    case IceCream = 344
+    case Buffet = 350
+    case Burgers = 351
+    case Diner = 354
+    case FastFood = 355
+    case Pizza = 363
+}
+
+
 class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
 
     var notification: UILocalNotification?

@@ -10,6 +10,8 @@ import Foundation
 import CoreLocation
 
 class FactualHandler: NSObject {
+    
+    
 
     enum RestaurantType: Int {
         case Desert = 343
