@@ -61,6 +61,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     
     override func viewDidAppear(animated: Bool) {
+        
         UIView.animateWithDuration(1, delay: 0.0, options: .Repeat, animations: {
             self.hand.transform = CGAffineTransformMakeRotation((4.0 * CGFloat(M_PI)) / 180.0)
             
