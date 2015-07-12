@@ -23,7 +23,6 @@ enum RestaurantType: Int {
 class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
 
     var notification: UILocalNotification?
-    var types: Set<RestaurantType> = [.Desert, .IceCream, .Buffet, .Burgers, .Diner, .FastFood, .Pizza]
     
     @objc func recipeFired(args: RecipeFiredArgs) {
 
@@ -33,31 +32,13 @@ class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
         let location = place.location
         let long = location.longitude
         let lat = location.latitude
-        var isFastFood: Bool = false
         
-        let jsonResult = FactualHandler.getRestaurantData(name, latitude: lat, longitude: long)
-        
-        if let response = jsonResult["response"] as? NSDictionary {
-            if let data = response["data"] as? NSArray {
-                if let restaurant = data[0] as? NSDictionary {
-                    if let ids = restaurant["category_ids"] as? NSArray {
-                        if let id = ids[0] as? Int {
-                            if (RestaurantType(rawValue: id) != nil) {
-                                println("food is unhealthy")
-                                isFastFood = true
-                            } else {
-                                println("food is healthy")
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        let restaurant = FactualHandler.getRestaurantData(name, latitude: lat, longitude: long)
         
         let title: String? = "Warning!!!"
-        let body: String? = isFastFood ? "Back off fatty... (Stay away from \(name))" : "Good job eating healthy... (Eating at \(name))"
+        let body: String? = restaurant.isHealthy ? "Good job eating healthy... (Eating at \(name))" : "Back off fatty... (Stay away from \(name))"
         let date: NSDate = NSDate(timeIntervalSinceNow: 3)
-        let dict: [NSString: AnyObject]? = ["lat": lat, "long": long, "name": name, "fastfood": isFastFood]
+        let dict: [NSString: AnyObject]? = ["lat": lat, "long": long, "name": name, "fastfood": !restaurant.isHealthy]
         
         notification = UILocalNotification()
         notification!.alertTitle = title
