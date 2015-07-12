@@ -10,6 +10,8 @@ import Foundation
 import CoreLocation
 
 class FactualHandler: NSObject {
+    
+    
 
     static func getRestaurantData(name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) -> Dictionary<String, AnyObject> {
         

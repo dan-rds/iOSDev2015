@@ -44,5 +44,7 @@
 	</array>
 	<key>sense360:sendDebugNotifications</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To tell where you have been dining</string>
 </dict>
 </plist>

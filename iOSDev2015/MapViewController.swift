@@ -22,7 +22,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 manager = CLLocationManager()
                 manager.delegate = self
                 manager.desiredAccuracy = kCLLocationAccuracyBest
-                manager.requestWhenInUseAuthorization()
+                manager.requestAlwaysAuthorization()
                 manager.startUpdatingLocation()
                 
                 var latitude:CLLocationDegrees = 48.3
@@ -65,9 +65,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 var userLocation:CLLocation = locations[0] as! CLLocation
                 
-                var latitude:CLLocationDegrees = userLocation.coordinate.latitude
+                var latitudeA:CLLocationDegrees = userLocation.coordinate.latitude
                 
-                var longitude:CLLocationDegrees = userLocation.coordinate.longitude
+                var longitudeA:CLLocationDegrees = userLocation.coordinate.longitude
                 
                 var latDelta:CLLocationDegrees = 0.1
                 
@@ -75,15 +75,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
                 
-                var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+                var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitudeA, longitudeA)
                 
                 var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
                 
                 mapView.setRegion(region, animated: true)
                 
-    
+                println(latitudeA)
+                
+                println(longitudeA)
 
-                println("locations = \(locations)")
+                //println("locations = \(locations)")
             }
             
             func locationManager(manager:CLLocationManager, didFailWithError error:NSError)

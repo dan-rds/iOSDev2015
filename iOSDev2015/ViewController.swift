@@ -17,6 +17,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var map: UIImageView!
     @IBOutlet weak var credits: UIImageView!
     @IBOutlet weak var hand: UIImageView!
+    var manager = CLLocationManager()
+  
+    
+    
+    override func viewDidLoad() {
+      manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestAlwaysAuthorization()
+        manager.startUpdatingLocation()
+        
+        
+        
+    }
+    
+    
+    
     
     @IBAction func testButtonPressed(sender: AnyObject) {
         
@@ -73,5 +89,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         })
         
     }
-}
+    
+    
+    }
+
+
 

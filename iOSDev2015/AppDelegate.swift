@@ -38,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     
+    
+    
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
         println("Notification recieved")
