@@ -38,6 +38,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     override func viewDidAppear(animated: Bool) {
         TRUE
+        
+        FactualRowFilter.fieldName("adfa", equalTo: "adfdas")
     }
 }
 

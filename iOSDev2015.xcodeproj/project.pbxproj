@@ -29,6 +29,10 @@
 		660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */; };
+		66924B4C1B51D1B100CE86BF /* FactualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; };
+		66924B4D1B51D21C00CE86BF /* FactualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; };
+		66924B4E1B51D21C00CE86BF /* FactualSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66924B531B51D7E400CE86BF /* ObjC-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				66924B4E1B51D21C00CE86BF /* FactualSDK.framework in Embed Frameworks */,
 				660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -56,14 +61,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		656DE7FA1B517FCE0096C07E /* iOSDev2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iOSDev2015.app; path = "Tisk Tisk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		656DE7FA1B517FCE0096C07E /* Tisk Tisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tisk Tisk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE7FE1B517FCE0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE7FF1B517FCE0096C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656DE8011B517FCE0096C07E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		656DE8041B517FCE0096C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		656DE8061B517FCE0096C07E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		656DE8091B517FCE0096C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = iOSDev2015Tests.xctest; path = Tisk_TiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656DE80F1B517FCF0096C07E /* Tisk_TiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tisk_TiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656DE8141B517FCF0096C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656DE8151B517FCF0096C07E /* iOSDev2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDev2015Tests.swift; sourceTree = "<group>"; };
 		656DE8211B519F240096C07E /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
@@ -80,6 +85,8 @@
 		660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		660DB3101B51827600FE4344 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRestaurantCallback.swift; sourceTree = "<group>"; };
+		66924B4B1B51D1B100CE86BF /* FactualSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FactualSDK.framework; sourceTree = "<group>"; };
+		66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66924B4D1B51D21C00CE86BF /* FactualSDK.framework in Frameworks */,
 				656DE8251B51A4D00096C07E /* MapKit.framework in Frameworks */,
 				660DB3111B51827600FE4344 /* libz.dylib in Frameworks */,
+				66924B4C1B51D1B100CE86BF /* FactualSDK.framework in Frameworks */,
 				660DB30F1B51826F00FE4344 /* SystemConfiguration.framework in Frameworks */,
 				660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */,
 				660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */,
@@ -125,8 +134,8 @@
 		656DE7FB1B517FCE0096C07E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				656DE7FA1B517FCE0096C07E /* iOSDev2015.app */,
-				656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */,
+				656DE7FA1B517FCE0096C07E /* Tisk Tisk.app */,
+				656DE80F1B517FCF0096C07E /* Tisk_TiskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +143,7 @@
 		656DE7FC1B517FCE0096C07E /* iOSDev2015 */ = {
 			isa = PBXGroup;
 			children = (
+				66924B4B1B51D1B100CE86BF /* FactualSDK.framework */,
 				660DB3081B51820B00FE4344 /* SenseSdk.framework */,
 				656DE7FF1B517FCE0096C07E /* AppDelegate.swift */,
 				66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */,
@@ -142,6 +152,7 @@
 				656DE8031B517FCE0096C07E /* Main.storyboard */,
 				656DE8061B517FCE0096C07E /* Images.xcassets */,
 				656DE8081B517FCE0096C07E /* LaunchScreen.xib */,
+				66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */,
 				656DE7FD1B517FCE0096C07E /* Supporting Files */,
 			);
 			path = iOSDev2015;
@@ -204,7 +215,7 @@
 			);
 			name = "Tisk Tisk";
 			productName = iOSDev2015;
-			productReference = 656DE7FA1B517FCE0096C07E /* iOSDev2015.app */;
+			productReference = 656DE7FA1B517FCE0096C07E /* Tisk Tisk.app */;
 			productType = "com.apple.product-type.application";
 		};
 		656DE80E1B517FCF0096C07E /* Tisk_TiskTests */ = {
@@ -222,7 +233,7 @@
 			);
 			name = Tisk_TiskTests;
 			productName = iOSDev2015Tests;
-			productReference = 656DE80F1B517FCF0096C07E /* iOSDev2015Tests.xctest */;
+			productReference = 656DE80F1B517FCF0096C07E /* Tisk_TiskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -314,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66924B531B51D7E400CE86BF /* ObjC-Bridging-Header.h in Sources */,
 				656DE8021B517FCE0096C07E /* ViewController.swift in Sources */,
 				66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */,
 				656DE8001B517FCE0096C07E /* AppDelegate.swift in Sources */,
@@ -452,6 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSDev2015/ObjC-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -468,6 +481,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSDev2015/ObjC-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -487,7 +501,7 @@
 				INFOPLIST_FILE = iOSDev2015Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDev2015.app/iOSDev2015";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tisk Tisk.app/Tisk Tisk";
 			};
 			name = Debug;
 		};
@@ -502,7 +516,7 @@
 				INFOPLIST_FILE = iOSDev2015Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDev2015.app/iOSDev2015";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tisk Tisk.app/Tisk Tisk";
 			};
 			name = Release;
 		};
