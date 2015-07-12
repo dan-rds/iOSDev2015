@@ -86,6 +86,7 @@ typedef struct _NSZone NSZone;
 @import CoreLocation;
 @import ObjectiveC;
 @import Foundation;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -263,6 +264,7 @@ SWIFT_CLASS("_TtC8SenseSdk8PoiPlace")
 @property (nonatomic, readonly) Location * __nonnull location;
 @property (nonatomic, readonly) double radius;
 @property (nonatomic, readonly) enum PlaceType type;
+@property (nonatomic, readonly, copy) NSString * __nonnull name;
 @property (nonatomic, readonly) NSMutableDictionary * __nonnull details;
 @property (nonatomic, readonly, copy, getter=description) NSString * __nonnull description;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude radius:(CLLocationDistance)radius name:(NSString * __nonnull)name id:(NSString * __nonnull)id type:(enum PoiType)type;
@@ -397,6 +399,10 @@ typedef SWIFT_ENUM(NSInteger, TriggerType) {
   TriggerTypeCustomGeofence = 2,
   TriggerTypePoi = 3,
 };
+
+
+@interface UIDevice (SWIFT_EXTENSION(SenseSdk))
+@end
 
 
 SWIFT_CLASS("_TtC8SenseSdk13UsersActivity")

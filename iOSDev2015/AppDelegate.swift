@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         
-        NSLog("Notification recieved")
+        println("Notification recieved")
         
         let controller = window!.rootViewController as! ViewController
         controller.handleNotification(notification)

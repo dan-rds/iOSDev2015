@@ -42,5 +42,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>sense360:sendDebugNotifications</key>
+	<true/>
 </dict>
 </plist>
