@@ -12,11 +12,15 @@ import CoreLocation
 import SenseSdk
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBOutlet weak var map: UIImageView!
 
+    @IBOutlet weak var history: UIImageView!
+    @IBOutlet weak var credits: UIImageView!
     @IBAction func testButtonPressed(sender: AnyObject) {
         
         NSLog("TestButton pressed")
@@ -26,6 +30,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         SenseSdkTestUtility.fireTrigger(fromRecipe: "restaurantRecipe", confidenceLevel: ConfidenceLevel.High, places: [place], errorPtr: error)
         
     }
+    @IBOutlet weak var hand: UIImageView!
     
     func handleNotification(notification: UILocalNotification) {
         
@@ -36,8 +41,46 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
      
     }
+    
+    override func viewDidLayoutSubviews() {
+        
+        history.image = UIImage(named: "history.png")
+        
+        history.center = CGPointMake(200, -75)
+
+        
+        map.image = UIImage(named: "mapimage.png")
+        
+        map.center = CGPointMake(200, -75)
+    
+        credits.image = UIImage(named: "Untitled-6.png")
+        
+         credits.center = CGPointMake(200, -75)}
+    
+    
+    
+    
     override func viewDidAppear(animated: Bool) {
-        TRUE
-    }
+        UIView.animateWithDuration(1, delay: 0.0, options: .Repeat, animations: {
+            self.hand.transform = CGAffineTransformMakeRotation((4.0 * CGFloat(M_PI)) / 180.0)
+            
+            }, completion: nil)
+        
+        
+      
+        UIView.animateWithDuration(1.4,animations: {
+            self.history.center = CGPointMake(200, 465)
+        })
+        
+       UIView.animateWithDuration(1.2,animations: {
+            self.map.center = CGPointMake(200, 570)
+            })
+        
+        UIView.animateWithDuration(1, animations: {
+            
+            self.credits.center = CGPointMake(200, 675)
+        
+        }
+    )}
 }
 
