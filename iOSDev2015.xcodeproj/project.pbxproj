@@ -32,10 +32,6 @@
 		660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; };
 		660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660DB3081B51820B00FE4344 /* SenseSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */; };
-		66924B4C1B51D1B100CE86BF /* FactualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; };
-		66924B4D1B51D21C00CE86BF /* FactualSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; };
-		66924B4E1B51D21C00CE86BF /* FactualSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66924B4B1B51D1B100CE86BF /* FactualSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		66924B531B51D7E400CE86BF /* ObjC-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +51,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				66924B4E1B51D21C00CE86BF /* FactualSDK.framework in Embed Frameworks */,
 				660DB3131B5182C200FE4344 /* SenseSdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -91,8 +86,7 @@
 		660DB30E1B51826F00FE4344 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		660DB3101B51827600FE4344 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRestaurantCallback.swift; sourceTree = "<group>"; };
-		66924B4B1B51D1B100CE86BF /* FactualSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FactualSDK.framework; sourceTree = "<group>"; };
-		66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		66924B551B51EE0100CE86BF /* ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66924B4D1B51D21C00CE86BF /* FactualSDK.framework in Frameworks */,
 				656DE8251B51A4D00096C07E /* MapKit.framework in Frameworks */,
 				660DB3111B51827600FE4344 /* libz.dylib in Frameworks */,
-				66924B4C1B51D1B100CE86BF /* FactualSDK.framework in Frameworks */,
 				660DB30F1B51826F00FE4344 /* SystemConfiguration.framework in Frameworks */,
 				660DB3121B5182C200FE4344 /* SenseSdk.framework in Frameworks */,
 				660DB30D1B51826600FE4344 /* CoreLocation.framework in Frameworks */,
@@ -149,16 +141,15 @@
 		656DE7FC1B517FCE0096C07E /* iOSDev2015 */ = {
 			isa = PBXGroup;
 			children = (
-				66924B4B1B51D1B100CE86BF /* FactualSDK.framework */,
 				660DB3081B51820B00FE4344 /* SenseSdk.framework */,
 				656DE7FF1B517FCE0096C07E /* AppDelegate.swift */,
 				66924B471B51A1BD00CE86BF /* GenericRestaurantCallback.swift */,
 				656DE8011B517FCE0096C07E /* ViewController.swift */,
+				66924B551B51EE0100CE86BF /* ObjC-Bridging-Header.h */,
 				656DE8381B51CAB50096C07E /* MapViewController.swift */,
 				656DE8031B517FCE0096C07E /* Main.storyboard */,
 				656DE8061B517FCE0096C07E /* Images.xcassets */,
 				656DE8081B517FCE0096C07E /* LaunchScreen.xib */,
-				66924B521B51D5BD00CE86BF /* ObjC-Bridging-Header.h */,
 				656DE7FD1B517FCE0096C07E /* Supporting Files */,
 			);
 			path = iOSDev2015;
@@ -337,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66924B531B51D7E400CE86BF /* ObjC-Bridging-Header.h in Sources */,
 				656DE8021B517FCE0096C07E /* ViewController.swift in Sources */,
 				66924B481B51A1BD00CE86BF /* GenericRestaurantCallback.swift in Sources */,
 				656DE8001B517FCE0096C07E /* AppDelegate.swift in Sources */,

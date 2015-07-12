@@ -10,7 +10,7 @@ import Foundation
 import SenseSdk
 
 
-class GenericRestaurantCallback: NSObject, RecipeFiredDelegate, FactualAPIDelegate {
+class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
 
     var notification: UILocalNotification?
     
@@ -41,36 +41,8 @@ class GenericRestaurantCallback: NSObject, RecipeFiredDelegate, FactualAPIDelega
         notification!.timeZone = NSTimeZone.defaultTimeZone()
         notification!.userInfo = dict
         
-        let fact = FactualAPI(APIKey: "DIV1dOLSuWLgVyg2uEIVVgdq8FrskSxZnvHlWeZ7", secret: "n1tE6gak9cVLB20rpJKd1bPQUZo2P35ocu4xUbGI")
-        fact.getTableSchema("restaurants-us", withDelegate: self)
-        
-        let query = FactualQuery()
-        query.addFullTextQueryTerm("mcdonalds")
-        query.includeRowCount = true
-        
-        fact.queryTable("restaurants-us", optionalQueryParams: query, withDelegate: self)
-        
         
         
     }
-    
-    func requestComplete(request: FactualAPIRequest!, failedWithError error: NSError!) {
-        
-    }
-    
-    func requestComplete(request: FactualAPIRequest!, receivedMatchResult factualId: String!) {
-        
-    }
-    
-    func requestComplete(request: FactualAPIRequest!, receivedQueryResult queryResult: FactualQueryResult!) {
-        
-        NSLog("%@", queryResult)
-        UIApplication.sharedApplication().scheduleLocalNotification(notification!)
-        
-    }
-    
-    func requestComplete(request: FactualAPIRequest!, receivedRawResult result: [NSObject : AnyObject]!) {
-        
-    }
-    
+
 }
