@@ -19,6 +19,7 @@ enum RestaurantType: Int {
     case Pizza = 363
 }
 
+
 class GenericRestaurantCallback: NSObject, RecipeFiredDelegate {
 
     var notification: UILocalNotification?

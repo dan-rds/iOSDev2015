@@ -16,9 +16,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     var manager:CLLocationManager!
     
+    var latDelta:CLLocationDegrees = 0.1
+    
+    var lonDelta:CLLocationDegrees = 0.1
+    
+    var longitudeA:CLLocationDegrees = 0
+
+    
+    
+    //println("locations = \(locations)")
          override func viewDidLoad() {
+    
+    
+    
                 super.viewDidLoad()
-                
+    
                 manager = CLLocationManager()
                 manager.delegate = self
                 manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -60,18 +72,17 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 
             }
-            
-            func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
+    
+    
+           func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
                 
                 var userLocation:CLLocation = locations[0] as! CLLocation
                 
                 var latitudeA:CLLocationDegrees = userLocation.coordinate.latitude
                 
-                var longitudeA:CLLocationDegrees = userLocation.coordinate.longitude
+                longitudeA = userLocation.coordinate.longitude
                 
-                var latDelta:CLLocationDegrees = 0.1
-                
-                var lonDelta:CLLocationDegrees = 0.1
+        
                 
                 var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
                 
@@ -86,8 +97,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 println(longitudeA)
 
                 //println("locations = \(locations)")
-            }
-            
+    }
+    
+
             func locationManager(manager:CLLocationManager, didFailWithError error:NSError)
             {
                 println(error)
@@ -136,9 +148,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+                
     }
-    
-    
+    static func getRestaurantData(name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) -> Dictionary<String, AnyObject> {
+        
+        let urlPath: String = String(format: "http://api.v3.factual.com/t/restaurants-us?limit=1&q=\(name)&KEY=DIV1dOLSuWLgVyg2uEIVVgdq8FrskSxZnvHlWeZ7&geo={\"$point\":[%f,%f]}", latitude, longitude)
+        var url: NSURL = NSURL(string: urlPath.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!
+        var request: NSURLRequest = NSURLRequest(URL: url)
+        var response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
+        var dataVal: NSData =  NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error:nil)!
+        var err: NSError?
+        var jsonResult: NSDictionary = (NSJSONSerialization.JSONObjectWithData(dataVal, options: NSJSONReadingOptions.MutableContainers, error: &err) as? NSDictionary)!
+        
+        return jsonResult as! Dictionary
+
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
