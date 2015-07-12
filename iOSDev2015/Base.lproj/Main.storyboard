@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -18,6 +18,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1425136738262-212551713a58.png" translatesAutoresizingMaskIntoConstraints="NO" id="2DJ-bs-Q2z">
                                 <rect key="frame" x="-4" y="-22" width="423" height="758"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2T-Ld-tPz">
                                 <rect key="frame" x="16" y="12" width="46" height="30"/>
@@ -25,9 +26,13 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="testButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dlO-u5-noM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waves2.png" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-hZ-tP3">
                                 <rect key="frame" x="93" y="128" width="191" height="116"/>
+                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-6.png" translatesAutoresizingMaskIntoConstraints="NO" id="vku-Ob-0Iz">
                                 <rect key="frame" x="123" y="628" width="172" height="53"/>
@@ -71,9 +76,11 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-EN-pDO">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <animations/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-cw-2Dr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <animations/>
                                 <items>
                                     <navigationItem title="Map" id="Fsc-QK-AOf">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="mzt-C1-8Ms"/>
@@ -81,6 +88,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>

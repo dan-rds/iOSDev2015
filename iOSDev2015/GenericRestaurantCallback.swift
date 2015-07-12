@@ -10,14 +10,16 @@ import Foundation
 import SenseSdk
 
 
-class GenericRestaurantCallback: RecipeFiredDelegate {
+class GenericRestaurantCallback: NSObject, RecipeFiredDelegate, FactualAPIDelegate {
 
+    var notification: UILocalNotification?
+    
     @objc func recipeFired(args: RecipeFiredArgs) {
         
         NSLog("recipe fired!")
         
         let place = args.triggersFired[0].places[0] as! PoiPlace
-        let name = place.id
+        let name = place.id //will be place.name after update
         let location = place.location
         let long = location.longitude
         let lat = location.latitude
@@ -32,13 +34,42 @@ class GenericRestaurantCallback: RecipeFiredDelegate {
         let date: NSDate = NSDate(timeIntervalSinceNow: 10)
         let dict: [NSString: AnyObject]? = ["lat": lat, "long": long, "name": name, "fastfood": isFastFood]
         
-        let notification = UILocalNotification()
-        notification.alertTitle = title
-        notification.alertBody = body
-        notification.fireDate = date
-        notification.timeZone = NSTimeZone.defaultTimeZone()
-        notification.userInfo = dict
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        notification = UILocalNotification()
+        notification!.alertTitle = title
+        notification!.alertBody = body
+        notification!.fireDate = date
+        notification!.timeZone = NSTimeZone.defaultTimeZone()
+        notification!.userInfo = dict
+        
+        let fact = FactualAPI(APIKey: "DIV1dOLSuWLgVyg2uEIVVgdq8FrskSxZnvHlWeZ7", secret: "n1tE6gak9cVLB20rpJKd1bPQUZo2P35ocu4xUbGI")
+        fact.getTableSchema("restaurants-us", withDelegate: self)
+        
+        let query = FactualQuery()
+        query.addFullTextQueryTerm("mcdonalds")
+        query.includeRowCount = true
+        
+        fact.queryTable("restaurants-us", optionalQueryParams: query, withDelegate: self)
+        
+        
+        
+    }
+    
+    func requestComplete(request: FactualAPIRequest!, failedWithError error: NSError!) {
+        
+    }
+    
+    func requestComplete(request: FactualAPIRequest!, receivedMatchResult factualId: String!) {
+        
+    }
+    
+    func requestComplete(request: FactualAPIRequest!, receivedQueryResult queryResult: FactualQueryResult!) {
+        
+        NSLog("%@", queryResult)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification!)
+        
+    }
+    
+    func requestComplete(request: FactualAPIRequest!, receivedRawResult result: [NSObject : AnyObject]!) {
         
     }
     
