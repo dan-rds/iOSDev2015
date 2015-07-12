@@ -28,16 +28,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         println("TestButton pressed")
         
         
-        
-        let place = PoiPlace(latitude: 34.23432 , longitude: -121.918564, radius: 50, name: "McDonalds", id: "mcdonalds", types: [.Restaurant])
-        
-        let error = SenseSdkErrorPointer.create()
-        
-        SenseSdkTestUtility.fireTrigger(
-            fromRecipe: "ArrivedAtRestaurant", //"restaurantRecipe",
-            confidenceLevel: ConfidenceLevel.High,
-            places: [place],
-            errorPtr: error)
+//        
+//        let place = PoiPlace(latitude: "\(latitude)", longitude: -121.918564, radius: 50, name: "McDonalds", id: "mcdonalds", types: [.Restaurant])
+//        
+//        let error = SenseSdkErrorPointer.create()
+//        
+//        SenseSdkTestUtility.fireTrigger(
+//            fromRecipe: "ArrivedAtRestaurant", //"restaurantRecipe",
+//            confidenceLevel: ConfidenceLevel.High,
+//            places: [place],
+//            errorPtr: error)
 
     
         
@@ -77,7 +77,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 println(latitude)
                 println(longitude)
         
-        
+
         
     }
 

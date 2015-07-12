@@ -81,7 +81,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 var latitudeA:CLLocationDegrees = userLocation.coordinate.latitude
                 
                 longitudeA = userLocation.coordinate.longitude
-                
+            
+                latitudeA = userLocation.coordinate.latitude
         
                 
                 var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
@@ -96,7 +97,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 println(longitudeA)
 
-                //println("locations = \(locations)")
     }
     
 
@@ -121,8 +121,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 
                 mapView.addAnnotation(newannotation)
                 
-                println(touchMapCoordinate.latitude)
-                println(touchMapCoordinate.longitude)
+                //println(touchMapCoordinate.latitude)
+                //println(touchMapCoordinate.longitude)
                 
                 var ceo:CLGeocoder = CLGeocoder()
                 
